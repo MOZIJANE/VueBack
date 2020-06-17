@@ -108,7 +108,7 @@ def getNow_data_fromPRTG(request):#获取prtg线路in或out占比
         response = requests.get(url).json()['histdata']
         In = response[-1]['Traffic In (speed)']
         Out = response[-1]['Traffic Out (speed)']
-        print(data)
+
 
     return JsonResponse({"code":0, "data":data})
 
