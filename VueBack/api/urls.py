@@ -28,5 +28,6 @@ urlpatterns = [
     path('regular_check/', views.regular_check),
     path('getSankeyFromUrl_GZ_HK/', views.getSankeyFromUrl_GZ_HK),
     path('getSankeyFromUrl_HK_GZ/', views.getSankeyFromUrl_HK_GZ),
+    path('getNow_data_fromPRTG/', views.getNow_data_fromPRTG),
 
 ]

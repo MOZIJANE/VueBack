@@ -104,11 +104,16 @@ def getNow_data_fromPRTG(request):#获取prtg线路in或out占比
     password = customTable.get(custom,"0")[1]
     data = {}
     for i in idDict:
-        url = 'http://10.68.253.13/api/historicdata.json?username=%s&passhash=%s&id=%s&sdate=%s&edate=%s&avg=0&pctshow=false&pctmode=false&usecaption=1'%(username,password,i["id"],sdate,edate)
-        response = requests.get(url).json()['histdata']
-        In = response[-1]['Traffic In (speed)']
-        Out = response[-1]['Traffic Out (speed)']
-
+        url_data = 'http://10.68.253.13/api/historicdata.json?username=%s&passhash=%s&id=%s&sdate=%s&edate=%s&avg=0&pctshow=false&pctmode=false&usecaption=1'%(username,password,i["id"],sdate,edate)
+        response = requests.get(url_data).json()['histdata']
+        url_name = 'http://10.68.253.13/api/getsensordetails.json?username=Jace_Mo&passhash=3188079540&id=%s'%(i['id'])
+        response_name = requests.get(url_name).json()['sensordata']['name']
+        if re.search(r'\d+M',response_name):
+            Bandwidth = int(re.search(r'\d+M',response_name).group()[:-1])*1000
+        In = int(response[-1]['Traffic In (speed)'])
+        Out = int(response[-1]['Traffic Out (speed)'])
+        proportion = str(math.ceil(round(max(In,Out)/1000)/Bandwidth*100)) + "%"
+        data[response_name] = proportion
 
     return JsonResponse({"code":0, "data":data})
 
@@ -614,14 +619,14 @@ async def VLAN_check(tn):#异步函数检查VLAN配置
 
 async def PWD_check(tn):#异步函数处理获取上网账号密码
     start = time.time()
-    print('开始执行pwd')
+    print('执行了pwd')
     data = {
         "label":'PPPOE',
         "value":None
     }
     data2 = {}
-    tn.write(b'show run | se ip route' + b'\n')
-    time.sleep(1)
+    tn.write(b' sh run | se ip route' + b'\n')
+    time.sleep(2)
     result = tn.read_very_eager().decode()
     print(result)
     if re.search(r'ip route 0.0.0.0 .+192.168.+', result):
@@ -632,11 +637,14 @@ async def PWD_check(tn):#异步函数处理获取上网账号密码
         return response
     elif re.search(r'ip route 0.0.0.0 0.0.0.0 Dialer2', result):
         print(re.search(r'ip route 0.0.0.0 0.0.0.0 Dialer2', result).group()+'-------'+'Dialer2')
-        tn.write(b'sh run | se ppp')
-        time.sleep(1)
+        tn.write(b'sh run | se ppp' + b'\n')
+        time.sleep(2)
         result1 = tn.read_very_eager().decode()
-        hostname = re.search(r'hostname (.*?)',result1).group()
-        password = re.search(r'password \d (.*?)', result1).group()
+        print(result1)
+        hostname = re.findall('hostname (.*).',result1)[0]
+        print(hostname)
+        password = re.findall('password \d (.*).', result1)[0]
+        print(password)
         pwd = decrypt_type7(password)
         data2['PPPOE'] = 'Dialer2'
         data2['username'] = hostname
@@ -645,7 +653,10 @@ async def PWD_check(tn):#异步函数处理获取上网账号密码
         response.append(data)
         return response
     else:
-        print('获取错误')
+        data2['PPPOE'] = '获取错误'
+        data['value'] = ''
+        response.append(data)
+        return response
 
 
 @require_POST
