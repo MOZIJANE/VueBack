@@ -112,7 +112,7 @@ def getNow_data_fromPRTG(request):#获取prtg线路in或out占比
             Bandwidth = int(re.search(r'\d+M',response_name).group()[:-1])*1000
         In = int(response[-1]['Traffic In (speed)'])
         Out = int(response[-1]['Traffic Out (speed)'])
-        proportion = str(math.ceil(round(max(In,Out)/1000)/Bandwidth*100)) + "%"
+        proportion = math.ceil(round(max(In,Out)/1000)/Bandwidth*100)
         data[response_name] = proportion
 
     return JsonResponse({"code":0, "data":data})
@@ -886,6 +886,21 @@ def getSankeyFromUrl_HK_GZ(request):
     try:
         url = "http://10.68.253.13/api/table.csv?&content=topdata&columns=position%2Cvalue_%2Cminigraph%2Cobjid%2Cbaselink&sortby=-value_2V&display=extendedheaders&subid=1&topnumber=-1&id=61235&username=Jace_Mo&passhash=3188079540"
         data["NetFlow"] = SankeyToJsonFromUrl_new(url)
+    except Exception as e:
+        print(e)
+        # pass
+    return JsonResponse({"code":0, "data":data})
+
+
+@require_POST
+def getSankeyFromUrl(request):
+    request_data = json.loads(request.body)
+    idDict = request_data.get("idDict")
+    data={}
+    try:
+        for i in idDict:
+            url = "http://10.68.253.13/api/table.csv?&content=topdata&columns=position%2Cvalue_%2Cminigraph%2Cobjid%2Cbaselink&sortby=-value_2V&display=extendedheaders&subid=1&topnumber=-1&id={}&username=Jace_Mo&passhash=3188079540".format(i['id'])
+            data["NetFlow"] = SankeyToJsonFromUrl_new(url)
     except Exception as e:
         print(e)
         # pass

@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="5de3e9ea-1a50-4605-87b0-0583f33c7307" name="默认" comment="" />
+    <list default="true" id="5de3e9ea-1a50-4605-87b0-0583f33c7307" name="默认" comment="delete print">
+      <change beforePath="$PROJECT_DIR$/.idea/dataSources/77124f37-49c8-4483-bb8b-e33c65cc8134.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/77124f37-49c8-4483-bb8b-e33c65cc8134.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/api/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/api/views.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,19 +68,23 @@
     <session id="793981804">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="1" />
+          <entry key="project.closed" value="2" />
+          <entry key="project.open.time.31" value="1" />
+          <entry key="project.open.time.35" value="1" />
           <entry key="project.open.time.45" value="1" />
-          <entry key="project.opened" value="1" />
+          <entry key="project.open.time.49" value="1" />
+          <entry key="project.opened" value="4" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="Python" value="2" />
+          <entry key="Python" value="6" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="Python" value="11" />
+          <entry key="PLAIN_TEXT" value="59" />
+          <entry key="Python" value="579" />
         </counts>
       </usages-collector>
     </session>
@@ -85,53 +94,54 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/api/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="200">
-              <caret line="189" lean-forward="true" selection-start-line="189" selection-end-line="189" />
+            <state relative-caret-position="165">
+              <caret line="880" lean-forward="true" selection-start-line="880" selection-end-line="880" />
               <folding>
-                <element signature="e#0#35#0" expanded="true" />
-                <element signature="e#435#754#0" />
-                <element signature="e#822#1450#0" />
-                <element signature="e#1504#2721#0" />
-                <element signature="e#2782#4269#0" />
-                <element signature="e#5383#6267#0" />
-                <element signature="e#6304#7579#0" />
-                <element signature="e#7630#8022#0" />
-                <element signature="e#8068#8710#0" />
-                <element signature="e#8749#14944#0" />
-                <element signature="e#15014#15924#0" />
-                <element signature="e#15995#16907#0" />
-                <element signature="e#16978#17891#0" />
-                <element signature="e#17962#18874#0" />
-                <element signature="e#18945#19856#0" />
-                <element signature="e#19927#20839#0" />
-                <element signature="e#20889#22208#0" />
-                <element signature="e#22254#23508#0" />
-                <element signature="e#23554#24402#0" />
-                <element signature="e#24449#25623#0" />
-                <element signature="e#25682#27570#0" />
-                <element signature="e#27628#29851#0" />
-                <element signature="e#29890#32689#0" />
-                <element signature="e#32738#33784#0" />
-                <element signature="e#33841#34252#0" />
-                <element signature="e#34309#34720#0" />
-                <element signature="e#34756#35172#0" />
-                <element signature="e#35207#35427#0" />
+                <element signature="e#818#1446#0" />
+                <element signature="e#2778#4265#0" />
+                <element signature="e#4338#5668#0" />
+                <element signature="e#5716#6600#0" />
+                <element signature="e#6637#7912#0" />
+                <element signature="e#7963#8355#0" />
+                <element signature="e#8401#9043#0" />
+                <element signature="e#9082#15277#0" />
+                <element signature="e#15347#16257#0" />
+                <element signature="e#16328#17240#0" />
+                <element signature="e#17311#18224#0" />
+                <element signature="e#18295#19207#0" />
+                <element signature="e#19278#20189#0" />
+                <element signature="e#20260#21172#0" />
+                <element signature="e#21222#22541#0" />
+                <element signature="e#22587#23841#0" />
+                <element signature="e#23887#24735#0" />
+                <element signature="e#24782#26114#0" />
+                <element signature="e#26173#27935#0" />
+                <element signature="e#27993#30216#0" />
+                <element signature="e#30255#33054#0" />
+                <element signature="e#33103#34149#0" />
+                <element signature="e#34206#34617#0" />
+                <element signature="e#35121#35537#0" />
+                <element signature="e#35572#35792#0" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/api/models.py">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/adminDB/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="253">
-              <caret line="11" column="43" lean-forward="true" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
-              <folding>
-                <element signature="e#2336#3867#0" />
-              </folding>
+            <state relative-caret-position="-108" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/api/urls.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="214">
+              <caret line="31" column="10" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="26" />
             </state>
           </provider>
         </entry>
@@ -145,14 +155,21 @@
       </list>
     </option>
   </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>find_re</find>
+    </findStrings>
+  </component>
   <component name="Git.Settings">
-    <option name="RECENT_GIT_ROOT_PATH" value="$USER_HOME$" />
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/adminDB/models.py" />
+        <option value="$PROJECT_DIR$/../../monitor(1).py" />
         <option value="$PROJECT_DIR$/api/views.py" />
+        <option value="$PROJECT_DIR$/api/urls.py" />
       </list>
     </option>
   </component>
@@ -163,8 +180,8 @@
     <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="-43" />
-    <option name="width" value="1005" />
+    <option name="x" value="94" />
+    <option name="width" value="1227" />
     <option name="height" value="744" />
   </component>
   <component name="ProjectId" id="1b9zMjpZr5zzBDKiSfX5OLFuu8W" />
@@ -206,8 +223,8 @@
   <component name="PropertiesComponent">
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQL" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
-    <property name="settings.editor.selected.configurable" value="com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../../批量开itop" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
@@ -312,6 +329,21 @@
       <workItem from="1588728681135" duration="17084000" />
       <workItem from="1588814956141" duration="13139000" />
     </task>
+    <task id="LOCAL-00001" summary="delete print">
+      <created>1592361363690</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1592361363691</updated>
+    </task>
+    <task id="LOCAL-00002" summary="add a funciton about Flow of(流量占比）">
+      <created>1592382582339</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1592382582339</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="TodoView">
@@ -325,13 +357,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
     <layout>
       <window_info id="Structure" order="0" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="1" side_tool="true" />
-      <window_info active="true" content_ui="combo" id="Project" order="2" visible="true" weight="0.3517398" />
+      <window_info content_ui="combo" id="Project" order="2" visible="true" weight="0.19515885" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.20853859" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -342,6 +375,7 @@
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="bottom" id="Terminal" order="11" weight="0.24958949" />
       <window_info anchor="bottom" id="Python Console" order="12" />
+      <window_info anchor="bottom" id="调试" order="13" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
@@ -356,6 +390,11 @@
   </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="delete print" />
+    <MESSAGE value="add a funciton about Flow of(流量占比）" />
+    <option name="LAST_COMMIT_MESSAGE" value="add a funciton about Flow of(流量占比）" />
   </component>
   <component name="WindowStateProjectService">
     <state x="137" y="22" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1588059216456">
@@ -380,62 +419,67 @@
         <state relative-caret-position="-276" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/api/info_table.py" />
+    <entry file="file://$PROJECT_DIR$/api/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="591">
+          <caret line="37" lean-forward="true" selection-start-line="37" selection-end-line="37" />
+          <folding>
+            <element signature="e#2336#3867#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../../monitor(1).py" />
+    <entry file="file://$PROJECT_DIR$/../../批量开itop/monitor(1).py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="407">
+          <caret line="39" column="31" lean-forward="true" selection-start-line="39" selection-start-column="31" selection-end-line="39" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/adminDB/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-108" />
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/api/urls.py">
-      <provider selected="true" editor-type-id="text-editor" />
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="214">
+          <caret line="31" column="10" selection-start-line="31" selection-start-column="10" selection-end-line="31" selection-end-column="26" />
+        </state>
+      </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/api/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="200">
-          <caret line="189" lean-forward="true" selection-start-line="189" selection-end-line="189" />
+        <state relative-caret-position="165">
+          <caret line="880" lean-forward="true" selection-start-line="880" selection-end-line="880" />
           <folding>
-            <element signature="e#0#35#0" expanded="true" />
-            <element signature="e#435#754#0" />
-            <element signature="e#822#1450#0" />
-            <element signature="e#1504#2721#0" />
-            <element signature="e#2782#4269#0" />
-            <element signature="e#5383#6267#0" />
-            <element signature="e#6304#7579#0" />
-            <element signature="e#7630#8022#0" />
-            <element signature="e#8068#8710#0" />
-            <element signature="e#8749#14944#0" />
-            <element signature="e#15014#15924#0" />
-            <element signature="e#15995#16907#0" />
-            <element signature="e#16978#17891#0" />
-            <element signature="e#17962#18874#0" />
-            <element signature="e#18945#19856#0" />
-            <element signature="e#19927#20839#0" />
-            <element signature="e#20889#22208#0" />
-            <element signature="e#22254#23508#0" />
-            <element signature="e#23554#24402#0" />
-            <element signature="e#24449#25623#0" />
-            <element signature="e#25682#27570#0" />
-            <element signature="e#27628#29851#0" />
-            <element signature="e#29890#32689#0" />
-            <element signature="e#32738#33784#0" />
-            <element signature="e#33841#34252#0" />
-            <element signature="e#34309#34720#0" />
-            <element signature="e#34756#35172#0" />
-            <element signature="e#35207#35427#0" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/info_table.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="299">
-          <caret line="13" column="42" lean-forward="true" selection-start-line="13" selection-start-column="42" selection-end-line="13" selection-end-column="42" />
-          <folding>
-            <element signature="e#0#35#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/api/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="253">
-          <caret line="11" column="43" lean-forward="true" selection-start-line="11" selection-start-column="43" selection-end-line="11" selection-end-column="43" />
-          <folding>
-            <element signature="e#2336#3867#0" />
+            <element signature="e#818#1446#0" />
+            <element signature="e#2778#4265#0" />
+            <element signature="e#4338#5668#0" />
+            <element signature="e#5716#6600#0" />
+            <element signature="e#6637#7912#0" />
+            <element signature="e#7963#8355#0" />
+            <element signature="e#8401#9043#0" />
+            <element signature="e#9082#15277#0" />
+            <element signature="e#15347#16257#0" />
+            <element signature="e#16328#17240#0" />
+            <element signature="e#17311#18224#0" />
+            <element signature="e#18295#19207#0" />
+            <element signature="e#19278#20189#0" />
+            <element signature="e#20260#21172#0" />
+            <element signature="e#21222#22541#0" />
+            <element signature="e#22587#23841#0" />
+            <element signature="e#23887#24735#0" />
+            <element signature="e#24782#26114#0" />
+            <element signature="e#26173#27935#0" />
+            <element signature="e#27993#30216#0" />
+            <element signature="e#30255#33054#0" />
+            <element signature="e#33103#34149#0" />
+            <element signature="e#34206#34617#0" />
+            <element signature="e#35121#35537#0" />
+            <element signature="e#35572#35792#0" />
           </folding>
         </state>
       </provider>
