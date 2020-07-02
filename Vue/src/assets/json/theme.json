@@ -1,0 +1,32 @@
+{ 
+  "dl":{
+    "el-menu":{
+      "menuBg":"#2A3F54",
+      "menuText":"#E7E7E7",
+      "menuActiveText":"#409EFF"
+    },
+    "echarts":{
+      "bg":"#fff"
+    }
+  },
+  "black":{
+    "el-menu":{
+      "menuBg":"#304156",
+      "menuText":"#E7E7E7",
+      "menuActiveText":"#409EFF"
+    },
+    "echarts":{
+      "bg":"#333333"
+    }
+  },
+  "violet":{
+    "el-menu":{
+      "menuBg":"#8D00AA",
+      "menuText":"#E7E7E7",
+      "menuActiveText":"#409EFF"
+    },
+    "echarts":{
+      "bg":"#C176E0"
+    }
+  }
+}

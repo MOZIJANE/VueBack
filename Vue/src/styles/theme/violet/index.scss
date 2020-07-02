@@ -1,0 +1,12 @@
+@import 'settings.scss';
+@import '../../main.scss';
+@import '../../mixin.scss';
+@import '../../transition.scss';
+@import '../../element-ui.scss';
+
+.theme-#{$theme-name}{
+  #app{
+    background: $appColor !important;
+  }
+}
+
