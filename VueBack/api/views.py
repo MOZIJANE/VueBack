@@ -937,3 +937,7 @@ def encrypt_type7(pt):#思科7型密码加密
 		salt += 1
 		if salt == 51: salt = 0
 	return ep
+
+
+def hello():
+    print('hello,jane')
